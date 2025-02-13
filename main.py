@@ -12,7 +12,7 @@ def convert_to_binary(edgeMAG, threshold):
 
 def save_image(binary_image, file_path):
     edge_image = Image.fromarray(binary_image)
-    edge_image.save(file_path)
+    edge_image.save(file_path) 
 
 image_array = load_image('adi.jpg')
 clean_image = supress_noise(image_array)
